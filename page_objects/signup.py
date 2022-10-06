@@ -30,10 +30,7 @@ class SignUp:
     def __init__(self, driver):
         self.driver = driver
 
-    # def setGender(self):
-    #     self.driver.find_element(By.XPATH, self.button_female_gender_xpath).click()
-
-    def clickSigninDashboard(self):
+    def click_signin_dashboard(self):
         self.driver.find_element(By.XPATH, self.button_signin_dashboard_xpath).click()
 
     def setUserEmail(self, email):

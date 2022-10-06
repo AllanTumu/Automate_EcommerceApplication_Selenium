@@ -26,7 +26,7 @@ class Test_001_signup:
         self.driver = setup
         self.driver.get(self.baseUrl)
         self.su = SignUp(self.driver)
-        self.su.clickSigninDashboard()
+        self.su.click_signin_dashboard()
         time.sleep(2)
         self.su.setUserEmail(self.email)
         self.su.clickCreateAccount()
