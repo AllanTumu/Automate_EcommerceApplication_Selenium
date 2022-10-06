@@ -30,94 +30,91 @@ class SignUp:
     def __init__(self, driver):
         self.driver = driver
 
-    # def setGender(self):
-    #     self.driver.find_element(By.XPATH, self.button_female_gender_xpath).click()
-
-    def clickSigninDashboard(self):
+    def click_signin_dashboard(self):
         self.driver.find_element(By.XPATH, self.button_signin_dashboard_xpath).click()
 
-    def setUserEmail(self, email):
+    def set_user_email(self, email):
 
         signup_email_field = self.driver.find_element(By.XPATH, self.textbox_email_xpath)
         signup_email_field.clear()
         signup_email_field.send_keys(email)
 
-    def clickCreateAccount(self):
+    def click_create_account(self):
         self.driver.find_element(By.XPATH, self.button_create_account_xpath).click()
 
-    def setFirstName(self, first_name):
+    def set_first_name(self, first_name):
         firstname_field = self.driver.find_element(By.XPATH, self.textbox_fname_xpath)
         firstname_field.clear()
         firstname_field.send_keys(first_name)
 
-    def setLastName(self, last_name):
+    def set_last_name(self, last_name):
         lastname_field = self.driver.find_element(By.XPATH, self.textbox_lname_xpath)
         lastname_field.clear()
         lastname_field.send_keys(last_name)
 
-    def setPassword(self, password):
+    def set_password(self, password):
         password_field = self.driver.find_element(By.XPATH, self.textbox_password_xpath)
         password_field.send_keys(password)
         password_field.click()
 
-    def setAddressFirstName(self, address_first_name):
+    def set_address_first_name(self, address_first_name):
         address_first_name_field = self.driver.find_element(By.XPATH, self.textbox_address_fname_xpath)
         address_first_name_field.clear()
         address_first_name_field.send_keys(address_first_name)
 
-    def setAddressLastName(self, address_last_name):
+    def set_address_last_name(self, address_last_name):
         address_last_name_field = self.driver.find_element(By.XPATH, self.textbox_address_lname_xpath)
         address_last_name_field.click()
         address_last_name_field.send_keys(address_last_name)
 
-    def setCompany(self, company):
+    def set_company(self, company):
         company_field = self.driver.find_element(By.XPATH, self.textbox_company_xpath)
         company_field.clear()
         company_field.send_keys(company)
 
-    def setAddress(self, address):
+    def set_address(self, address):
         address_field = self.driver.find_element(By.XPATH, self.textbox_address_xpath)
         address_field.clear()
         address_field.send_keys(address)
 
-    def setCity(self, city):
+    def set_city(self, city):
         city_field = self.driver.find_element(By.XPATH, self.textbox_city_xpath)
         city_field.clear()
         city_field.send_keys(city)
 
-    def setPostalCode(self, postal_code):
+    def set_postal_code(self, postal_code):
         postal_code_field = self.driver.find_element(By.XPATH, self.text_postal_code_xpath)
         postal_code_field.clear()
         postal_code_field.send_keys(postal_code)
 
-    def setMobilePhone(self, mobile_phone):
+    def set_mobile_phone(self, mobile_phone):
         mobile_phone_field = self.driver.find_element(By.XPATH, self.textbox_mobile_phone_xpath)
         mobile_phone_field.clear()
         mobile_phone_field.send_keys(mobile_phone)
 
-    def setAddressReference(self, address_reference):
+    def set_address_reference(self, address_reference):
         address_reference_field = self.driver.find_element(By.XPATH, self.textbox_address_reference_xpath)
         address_reference_field.clear()
         address_reference_field.send_keys(address_reference)
 
-    def setDOBDay(self, day_DOB):
+    def set_dob_day(self, day_DOB):
         day_DOB_field = Select(self.driver.find_element(By.XPATH, self.drop_down_day_DOB_xpath))
 
         day_DOB_field.select_by_value(day_DOB)
 
-    def setDOBMonth(self, month_DOB):
+    def set_dob_month(self, month_DOB):
         day_DOB_field = Select(self.driver.find_element(By.XPATH, self.drop_down_month_DOB_xpath))
         day_DOB_field.select_by_value(month_DOB)
 
-    def setDOBYear(self, year_DOB):
+    def set_dob_year(self, year_DOB):
         day_DOB_field = Select(self.driver.find_element(By.XPATH, self.drop_down_year_DOB_xpath))
         day_DOB_field.select_by_value(year_DOB)
 
-    def setState(self, state):
+    def set_state(self, state):
         state_field = Select(self.driver.find_element(By.XPATH, self.drop_down_state_xpath))
         state_field.select_by_visible_text(state)
 
-    def clickRegister(self):
+    def click_register(self):
         self.driver.find_element(By.XPATH, self.button_register_xpath).click()
 
 
